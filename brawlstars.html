@@ -1,75 +1,114 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Оценка аккаунта Brawl Stars</title>
+    <title>Бункер - Виживи в апокаліпсисі</title>
+    <link rel="icon" type="image/png" href="mainbunker.png">
     <style>
         body {
-          font-family: Arial, sans-serif;
-          background-color: #f0f0f0;
-          padding: 20px;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(135deg, #043927, #0d0d0d);
+            color: white;
+        }
+        header {
+            padding: 20px;
+            background: linear-gradient(135deg, #1b5e20, #004d40);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 0 4px 10px rgba(0, 255, 127, 0.3);
+        }
+        .logo {
+            max-width: 250px;
+            margin-bottom: 10px;
         }
         .container {
-          max-width: 500px;
-          margin: auto;
-          background-color: white;
-          padding: 20px;
-          border-radius: 12px;
-          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 30px;
+            background: rgba(0, 50, 0, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(0, 255, 127, 0.4);
+            transition: 0.3s;
         }
-        input {
-          width: 100%;
-          padding: 10px;
-          margin-top: 10px;
-          margin-bottom: 20px;
-          border-radius: 8px;
-          border: 1px solid #ccc;
+        .container:hover {
+            transform: scale(1.03);
         }
-        button {
-          padding: 10px 20px;
-          background-color: #007bff;
-          color: white;
-          border: none;
-          border-radius: 8px;
-          cursor: pointer;
+        .button {
+            display: inline-block;
+            padding: 15px 35px;
+            background: linear-gradient(135deg, #1b5e20, #004d40);
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 255, 127, 0.3);
         }
-        button:hover {
-          background-color: #0056b3;
+        .button:hover {
+            background: linear-gradient(135deg, #2e7d32, #00796b);
+            transform: scale(1.07);
         }
-        #result {
-          margin-top: 20px;
-          font-weight: bold;
+        .section {
+            margin: 40px auto;
+            padding: 30px;
+            max-width: 1100px;
+            background: rgba(0, 50, 0, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 255, 127, 0.4);
+            text-align: left;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 25px;
+            background-color: #004d40;
+            font-size: 18px;
+            box-shadow: 0 -4px 15px rgba(0, 255, 127, 0.3);
+        }
+        footer a {
+            color: #00ff99;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-    <h1>Оцени свой аккаунт Brawl Stars</h1>
-    <label>Количество бойцов:</label>
-    <input type="number" id="brawlers" placeholder="например, 60">
-
-    <label>Общее количество кубков:</label>
-    <input type="number" id="trophies" placeholder="например, 15000">
-
-    <label>Количество скинов:</label>
-    <input type="number" id="skins" placeholder="например, 20">
-
-    <button onclick="calculateValue()">Оценить</button>
-
-    <div id="result"></div>
-</div>
-
-<script>
-    function calculateValue() {
-      const brawlers = parseInt(document.getElementById('brawlers').value) || 0;
-      const trophies = parseInt(document.getElementById('trophies').value) || 0;
-      const skins = parseInt(document.getElementById('skins').value) || 0;
-
-      const value = (brawlers * 100) + (trophies * 0.5) + (skins * 150);
-
-      document.getElementById('result').innerText = `Примерная ценность аккаунта: ${value.toFixed(2)} монет.`;
-    }
-</script>
+    <header>
+        <img src="mainbunker.png" alt="Логотип Бункер" class="logo">
+        <h1>Бункер - Виживи в апокаліпсисі</h1>
+    </header>
+    <div class="container">
+        <h2>Чи зможеш ти вижити?</h2>
+        <p>"Бункер" - це захоплююча гра, де тобі потрібно боротися за виживання в умовах апокаліпсису. Створи свою команду, приймай стратегічні рішення та доведи, що саме ти заслуговуєш на місце у бункері!</p>
+        <a href="https://drive.google.com/uc?export=download&id=1s0kb9mIMhDzRmMisusFOhVp8Xjsld9T3" class="button" download>Завантажити гру</a>
+    </div>
+    <div class="section">
+        <h2>Про гру</h2>
+        <p>Гра "Бункер" переносить вас у світ, що перебуває на межі апокаліпсису. Вам доведеться приймати складні рішення, боротися за ресурси та взаємодіяти з іншими персонажами, щоб отримати шанс на виживання.</p>
+        <ul>
+            <li>🎮 Динамічний геймплей з численними варіантами розвитку подій.</li>
+            <li>🔍 Атмосферна історія з глибокими сюжетними розгалуженнями.</li>
+            <li>📱 Доступно для Android 7.0 і вище.</li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2024 Бункер. Всі права захищено.</p>
+        <p>Розробник: @s0nnij</p>
+        <p>Контакти: assistancebunker.game@gmail.com</p>
+        <p>Соцмережі: 
+            <a href="https://t.me/s0nnij" target="_blank">Telegram</a> | 
+            <a href="https://discordapp.com/users/co.sm" target="_blank">Discord</a> |<a href="https://www.instagram.com/space.are/" target="_blank">Instagram</a>
+        </p>
+    </footer>
 </body>
 </html>
